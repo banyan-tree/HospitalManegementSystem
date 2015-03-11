@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f1b8c233-2352-4526-9144-214b6a9812d6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="7"/>
+	<parameter name="tempPrescriptionList" class="java.util.List"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="doctorsContactNo" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsContactNo]]></fieldDescription>
+	</field>
+	<field name="doctorsFullAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsFullAddress]]></fieldDescription>
+	</field>
+	<field name="doctorsFullName" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsFullName]]></fieldDescription>
+	</field>
+	<field name="doctorsQualification" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsQualification]]></fieldDescription>
+	</field>
+	<field name="doctorsRegNo" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsRegNo]]></fieldDescription>
+	</field>
+	<field name="patientAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[patientAddress]]></fieldDescription>
+	</field>
+	<field name="patientAge" class="java.lang.String">
+		<fieldDescription><![CDATA[patientAge]]></fieldDescription>
+	</field>
+	<field name="patientFullName" class="java.lang.String">
+		<fieldDescription><![CDATA[patientFullName]]></fieldDescription>
+	</field>
+	<field name="patientSex" class="java.lang.String">
+		<fieldDescription><![CDATA[patientSex]]></fieldDescription>
+	</field>
+	<field name="patientWeight" class="java.lang.String">
+		<fieldDescription><![CDATA[patientWeight]]></fieldDescription>
+	</field>
+	<field name="prescriptionDate" class="java.lang.String">
+		<fieldDescription><![CDATA[prescriptionDate]]></fieldDescription>
+	</field>
+	<field name="prescriptionNo" class="java.lang.String">
+		<fieldDescription><![CDATA[prescriptionNo]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="25361691-e93d-4e43-8251-4c5d705bf3f5" x="286" y="23" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[TITLE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

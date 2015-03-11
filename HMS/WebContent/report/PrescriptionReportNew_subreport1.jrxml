@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PrescriptionReportNew_subreport1" language="groovy" pageWidth="421" pageHeight="595" columnWidth="421" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="79655b42-a699-4455-895a-ad2af2f0407f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="days" class="java.lang.String">
+		<fieldDescription><![CDATA[days]]></fieldDescription>
+	</field>
+	<field name="directions" class="java.lang.String">
+		<fieldDescription><![CDATA[directions]]></fieldDescription>
+	</field>
+	<field name="dosageId" class="java.lang.String">
+		<fieldDescription><![CDATA[dosageId]]></fieldDescription>
+	</field>
+	<field name="dosageName" class="java.lang.String">
+		<fieldDescription><![CDATA[dosageName]]></fieldDescription>
+	</field>
+	<field name="prescriptionDetailsId" class="java.lang.String">
+		<fieldDescription><![CDATA[prescriptionDetailsId]]></fieldDescription>
+	</field>
+	<field name="prescriptionId" class="java.lang.String">
+		<fieldDescription><![CDATA[prescriptionId]]></fieldDescription>
+	</field>
+	<field name="productId" class="java.lang.String">
+		<fieldDescription><![CDATA[productId]]></fieldDescription>
+	</field>
+	<field name="productName" class="java.lang.String">
+		<fieldDescription><![CDATA[productName]]></fieldDescription>
+	</field>
+	<field name="quantity" class="java.lang.String">
+		<fieldDescription><![CDATA[quantity]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement uuid="52091a31-e471-4034-89b7-bce100756716" x="213" y="0" width="192" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{directions}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d604a1dd-8d4d-4304-8bb7-5a3b2fe03d7f" x="12" y="20" width="297" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dosageName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c55fb619-1a15-4538-942c-19e3e908e7ef" x="0" y="0" width="213" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="140ee755-f579-486f-8198-2ac7cd703e63" x="320" y="20" width="83" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

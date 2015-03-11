@@ -1,0 +1,87 @@
+@CHARSET "ISO-8859-1";
+
+.dropdown-menu.multi-column {
+	width: 510px;
+}
+
+.dropdown-menu.multi-column .dropdown-menu {
+	display: block !important;
+	position: static !important;
+	margin: 0 !important;
+	border: none !important;
+	box-shadow: none !important;
+	min-width: 100px;
+}
+
+/*
+.tabbable {
+	height: 100%;
+	border-bottom: 1px solid #ddd;
+}
+*/
+.tab-content {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+
+.nav-tabs {
+	margin-bottom: 0;
+}
+
+.showIt {
+	display: block;
+}
+
+#hideOther {
+	display: none;
+}
+
+.redColor {
+	color: red;
+}
+
+.greenColor {
+	color: green;
+}
+
+.prescriptionBox {
+	width: 14cm;
+	height: 21cm;
+	border: thin solid gray;
+	padding: 15px;
+}
+
+.height-15percent {
+	height: 15%;
+}
+
+.prescription-header-name {
+	font-family: ' Times NewRoman', Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.prescription-sub-header-name {
+	font-size: 10px;
+	text-align: center;
+}
+
+#searchPatientVisitModal {
+	width: 95%;
+}
+
+#myModal {
+	width: 90%;
+	height: auto;
+}
+
+.hms-bg-info-color {
+	background-color: cyan;
+}
+
+.text-red {
+	color: red;
+}

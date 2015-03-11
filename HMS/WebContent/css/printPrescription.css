@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+
+.non-printable {
+	display: none;
+}
+
+.printable {
+	display: block;
+}
+
+body {
+	color: #000000;
+	background: #ffffff;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12pt;
+}
+
+.prescriptionBox {
+	width: 14cm;
+	height: 21cm;
+	border: thin solid gray;
+	padding: 15px;
+}
+
+.height-15percent {
+	height: 15%;
+}
+
+.height-17percent {
+	height: 17%;
+	display: block;
+}
+
+.height-33percent {
+	height: 33%;
+}
+
+.height-40percent {
+	height: 40%;
+}
+
+.height-20px {
+	height: 20px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.margin-left-5px {
+	margin-left: 5px;
+}
+
+.margin-left-8cm {
+	margin-left: 8cm;
+}
+
+.prescription-header-area {
+	text-align: center;
+}
+
+.prescription-header-name {
+	font-family: ' Times NewRoman', Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.prescription-sub-header-name {
+	font-size: 10px;
+}
+
+.prescription-footer {
+	height: 20%;
+	display: block;
+	font-size: 12px;
+}
+
+.prescription-footer-left {
+	float: left;
+	width: 5cm;
+}
+
+.prescription-footer-right {
+	float: right;
+	width: 5cm;
+}

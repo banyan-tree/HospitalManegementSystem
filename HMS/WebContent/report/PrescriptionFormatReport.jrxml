@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PrescriptionFormatReport" language="groovy" pageWidth="421" pageHeight="595" columnWidth="381" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cde7bce7-6b53-408d-a203-a106370e7bce">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="tempPrescriptionList" class="java.util.List"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="doctorsContactNo" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsContactNo]]></fieldDescription>
+	</field>
+	<field name="doctorsFullAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsFullAddress]]></fieldDescription>
+	</field>
+	<field name="doctorsFullName" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsFullName]]></fieldDescription>
+	</field>
+	<field name="doctorsQualification" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsQualification]]></fieldDescription>
+	</field>
+	<field name="doctorsRegNo" class="java.lang.String">
+		<fieldDescription><![CDATA[doctorsRegNo]]></fieldDescription>
+	</field>
+	<field name="patientAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[patientAddress]]></fieldDescription>
+	</field>
+	<field name="patientAge" class="java.lang.String">
+		<fieldDescription><![CDATA[patientAge]]></fieldDescription>
+	</field>
+	<field name="patientFullName" class="java.lang.String">
+		<fieldDescription><![CDATA[patientFullName]]></fieldDescription>
+	</field>
+	<field name="patientSex" class="java.lang.String">
+		<fieldDescription><![CDATA[patientSex]]></fieldDescription>
+	</field>
+	<field name="patientWeight" class="java.lang.String">
+		<fieldDescription><![CDATA[patientWeight]]></fieldDescription>
+	</field>
+	<field name="prescriptionDate" class="java.lang.String">
+		<fieldDescription><![CDATA[prescriptionDate]]></fieldDescription>
+	</field>
+	<field name="prescriptionNo" class="java.lang.String">
+		<fieldDescription><![CDATA[prescriptionNo]]></fieldDescription>
+	</field>
+	<field name="isDuplicateCopy" class="java.lang.String">
+		<fieldDescription><![CDATA[isDuplicateCopy]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<textField>
+				<reportElement uuid="92b845dc-339c-4020-8540-ec0787fa79d2" x="216" y="32" width="167" height="15"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{doctorsRegNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f335b62b-ed58-43f3-8608-6fd25cf5809b" x="2" y="32" width="201" height="15"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{doctorsQualification}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d08006aa-b6d7-431c-a227-275133641aa2" x="2" y="2" width="381" height="30"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{doctorsFullName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="586feff5-cbf8-4b4e-93d3-f0d4a3944d9e" x="2" y="63" width="381" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{doctorsContactNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f830dfc0-c5e3-46ee-94cf-049c1a978287" x="2" y="48" width="381" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{doctorsFullAddress}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="98" splitType="Stretch">
+			<textField>
+				<reportElement uuid="87dec5a2-fbc8-468c-9559-3f0b7bebe110" x="128" y="78" width="33" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{patientWeight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="85c111c4-78ae-4bf4-ba90-bc3db1a404be" x="28" y="78" width="22" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{patientSex}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0af39558-fb8e-47c1-9f98-fb61c1222575" x="6" y="78" width="22" height="20"/>
+				<textElement/>
+				<text><![CDATA[Sex:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="b149971f-c31d-4991-b947-26db952b2005" x="2" y="3" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{prescriptionNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="246814c4-7ed3-4698-8dc4-8335797e9ef9" x="92" y="78" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[Weight:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4cdc1b07-5d4c-4e74-9169-ef2d294c593a" x="290" y="3" width="30" height="20"/>
+				<textElement/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ce97ff46-1877-4e07-a44d-85a509bc0266" x="320" y="3" width="63" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{prescriptionDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d87f02a0-7562-4b62-9557-55ceb52624c3" x="50" y="78" width="22" height="20"/>
+				<textElement/>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="87ba8039-c5b9-413d-b2c5-3ff5ac06392b" x="7" y="50" width="221" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{patientAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1885b4f3-19d7-4820-9dc4-2a678348b422" x="72" y="78" width="20" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{patientAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="16769087-0a50-45d1-aac2-503ccd3b6657" x="6" y="30" width="222" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{patientFullName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dfb92be9-0597-4759-9fbe-f1eaff353ff3" x="146" y="2" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{isDuplicateCopy}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="89311d60-bea8-47e5-905a-c88557740fce" x="7" y="2" width="43" height="26"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Rx]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="5658a10e-9d76-4dae-8942-fa0a98d62e52" x="10" y="0" width="367" height="125"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{tempPrescriptionList})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["D://Rohit//Hospital Data//HospitalManagementSystem_20141124_3//HospitalManagementSystem//WebContent//report//PrescriptionFormatReport_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
